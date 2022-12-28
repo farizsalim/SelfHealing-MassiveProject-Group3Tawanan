@@ -1,0 +1,92 @@
+.backgroundlogin{
+    top: 0px;
+    z-index: -10;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+}
+
+.loginform{
+    margin-top: 300px;
+    margin-left: 800PX;
+}
+
+.formtitle{
+    text-align: center;
+    width: 500px;
+    font-family: 'Balsamiq Sans';
+    font-size: 50px;
+    font-weight: bold;
+    color: #674BE4;
+}
+
+.formlabel{
+    width: 500px;
+    font-family: 'Balsamiq Sans';
+    font-size: 25px;
+    font-weight: bold;
+    color: #674BE4;
+}
+
+#passfield,#emailfield{
+    border-radius: 0pc;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    font-family: 'Balsamiq Sans';
+    height: 50px;
+}
+
+#loginbtn{
+    margin: 20px;
+    padding: 5px 60px;
+    border-radius: 50px;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: #BEFDFF;
+    background-color: #674BE4;
+    font-family: 'Balsamiq Sans';
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+#signupbtn{
+    margin: 23px;
+    padding: 5px 40px;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: #BEFDFF;
+    background-color: #BEFDFF;
+    font-family: 'Balsamiq Sans';
+    font-size: 35px;
+    font-weight: bold;
+    color: #1B7C80;
+}
+
+#signupbtn:hover{
+    color: #674BE4;
+    border-color: #674BE4;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+}
+
+#loginbtn:hover{
+    color: #674BE4;
+    border-color: #674BE4;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+}
+
+.forgetpass{
+    color: #A25475;
+    font-family: 'Balsamiq Sans';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.forgetpass:hover{
+    color: #674BE4;
+}

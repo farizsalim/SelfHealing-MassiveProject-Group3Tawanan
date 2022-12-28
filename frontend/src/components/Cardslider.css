@@ -1,0 +1,29 @@
+.slider{
+    display: flex;
+    width: 1000px;
+}
+
+.rarrow{
+    position: absolute;
+    top: 250px;
+    left: 1050px;
+    width: 34px;
+    height: 30.76px;
+}
+.rarrow:hover{
+    width: 40px;
+    height: 36.76px;
+}
+
+.larrow:hover{
+    width: 40px;
+    height: 36.76px;
+}
+
+.larrow{
+    position: absolute;
+    top: 250px;
+    right: 1050px;
+    width: 34px;
+    height: 30.76px;
+}

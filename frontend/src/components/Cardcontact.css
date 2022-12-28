@@ -1,0 +1,27 @@
+#bodycard{
+    background-color: #8DDEE0;
+    height: 100px;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+
+.imgcont{
+    background-color: #0091A0;
+    position: absolute;
+    left:10px;
+    top:15px;
+    padding: 10px;
+    width: 70px;
+    height: 70.45px;
+    border-radius: 20px;
+}
+
+.vartitle{
+    padding-left: 100px;
+    color: #006974;
+}
+
+.vartxt{
+    padding-left: 100px;
+    color: #0091A0;
+}
