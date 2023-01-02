@@ -1,5 +1,6 @@
 const HOME = "/";
 const LOGIN = "/loginpage"
-const SIGNUP = "/signup"
+const SIGNUP = "/signuppage"
+const TROOM = "/therapyroompage"
 
-export {HOME,LOGIN,SIGNUP};
+export {HOME,LOGIN,SIGNUP,TROOM};

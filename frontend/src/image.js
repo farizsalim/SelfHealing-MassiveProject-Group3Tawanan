@@ -17,6 +17,8 @@ import Facebook from "./images/fb.png"
 import Twitter from "./images/twit.png"
 import Bglogin from "./images/BgLogin.png"
 import Bgsignup from "./images/Bgsignup.png"
+import BgTroom from "./images/Bgroomteraphy.png"
+import Theraphy1 from "./images/therapy1.png"
 
 const homebackg = homeback;
 const bglogin = Bglogin
@@ -37,7 +39,9 @@ const ytb = Youtube;
 const fb = Facebook;
 const twit = Twitter;
 const bgsignup = Bgsignup;
+const btroom = BgTroom;
+const therapy1 = Theraphy1;
 
 export {homebackg,logo,product1,product2,product3,leaves1,leaves2,user1,rightarrow,leftarrow,emailvector,wavector,logo2
-        ,insta,ytb,fb,twit,bglogin,bgsignup
+        ,insta,ytb,fb,twit,bglogin,bgsignup,btroom,therapy1
 };
