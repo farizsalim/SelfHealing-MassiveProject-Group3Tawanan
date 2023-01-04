@@ -1,8 +1,9 @@
 .bodytr{
-    padding: 30px 100px;
+    padding: 50px 100px;
     margin: 80px 0px;
     background-color: rgb(130, 102, 255, 0.7);
     border-radius: 20px;
+    height: min-content;
 }
 
 .titletherapy{
