@@ -2,7 +2,7 @@ import {Navbar,NavDropdown,Nav,Container} from "react-bootstrap"
 import { NavLink} from "react-router-dom"
 import { logo } from "../image"
 import "./Navs.css"
-import { HOME, LOGIN, SIGNUP } from "../routes"
+import { HOME, LOGIN, SIGNUP, TROOM } from "../routes"
 
 const Navs = () => {
     return(
@@ -14,7 +14,7 @@ const Navs = () => {
                 <Nav className="me-auto justify-content-end flex-grow-1">
                     <NavLink className="navtext mt-2" to={HOME}>Home</NavLink>
                     <NavDropdown className="navtext" title="Layanan" id="navdrop">
-                        <NavLink className="navtext2">Ruang Terapi</NavLink>
+                        <NavLink className="navtext2" to={TROOM}>Ruang Terapi</NavLink>
                         <NavLink className="navtext2">Tes Kesehatan</NavLink>
                         <NavLink className="navtext2">Blog/Artikel</NavLink>
                     </NavDropdown>

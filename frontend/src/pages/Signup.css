@@ -15,6 +15,7 @@
 }
 
 #regbody{
+    border-radius: 20px;
     margin: 0px 300px;
     padding: 50px 50px;
     background-color: rgb(130, 102, 255, 0.8);
@@ -22,11 +23,8 @@
     color: white;
 }
 
-.submitbody{
-    margin: 0 140px;
-}
-
-#firstname,#lastname,#emailfield,#phonefield,#passfield,#conpassfield{
+#firstname,#lastname,#email,#phoneNumber,#password,#confPassword{
+    width: 250px;
     border-radius: 0pc;
     border-color: black;
     border-width: 2px;
@@ -35,9 +33,10 @@
     height: 50px;
 }
 
-
 #submitbtn{
-    border-radius: 30px;
+    margin-left: 50px;
+    border-radius: 10px;
+    padding: 0px 10px;
     border-width: 1px;
     border-color: #BEFDFF;
     background-color: #BEFDFF;
