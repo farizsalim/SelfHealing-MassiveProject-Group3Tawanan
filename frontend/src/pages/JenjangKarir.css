@@ -1,0 +1,22 @@
+.bgkarir{
+    position: absolute;
+    object-fit: cover;
+    margin-top: 10px;
+    width: 100%;
+    z-index: -10;
+    top: 0;
+}
+
+.titlekarir{
+    text-align: center;
+    font-family: 'Balsamiq Sans';
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 200px;
+}
+
+.quoteskarir{
+    text-align: center;
+    font-family: 'Balsamiq Sans';
+    font-size: 20px;
+}

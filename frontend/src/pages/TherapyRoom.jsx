@@ -7,8 +7,8 @@ const Troom = () => {
     return(
         <section>
             <img className="backgroundtherapyroom" src={btroom} alt="backgroundtherapyroom" />
-            <Container className="body">
-                <h1 className="title text-center">Ruang Terapi</h1>
+            <Container>
+                <h1 className="titleruang text-center">Ruang Terapi</h1>
                 <h1 className="quotes text-center">Tingkatkan Mood Setiap Harinya</h1>
             </Container>
             <Cardlist/>

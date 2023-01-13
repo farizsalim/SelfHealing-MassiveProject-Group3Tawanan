@@ -2,6 +2,7 @@ import { bglogin } from "../image";
 import {Form,Button, Container} from "react-bootstrap"
 import "./Login.css"
 import { NavLink } from "react-router-dom";
+import { SIGNUP } from "../routes";
 
 const Login = () =>{
     return(
@@ -28,7 +29,7 @@ const Login = () =>{
                         <Button id="loginbtn" type="submit">
                             Login
                         </Button>
-                        <NavLink>
+                        <NavLink to={SIGNUP}>
                             <Button id="signupbtn" type="submit">
                                 Sign up
                             </Button>
