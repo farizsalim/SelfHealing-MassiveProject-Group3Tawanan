@@ -1,0 +1,23 @@
+
+.backgroundtherapyroom{
+    top: 0px;
+    z-index: -10;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+}
+
+.titleruang{
+    margin-top: 200px;
+    font-family: 'Balsamiq Sans';
+    font-size: 50px;
+    font-weight: bold;
+    color: #8266FF;
+}
+
+.quotes{
+    font-family: 'Balsamiq Sans';
+    font-size: 40px;
+    font-weight: bold;
+    color: #8266FF;
+}

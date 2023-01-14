@@ -1,0 +1,55 @@
+.backgroundsignup{
+    top: 0px;
+    z-index: -10;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+}
+
+.title{
+    margin-top: 200px;
+    font-family: 'Balsamiq Sans';
+    font-size: 50px;
+    font-weight: bold;
+    color: #4F3AAE;
+}
+
+#regbody{
+    border-radius: 20px;
+    margin: 0px 300px;
+    padding: 50px 50px;
+    background-color: rgb(130, 102, 255, 0.8);
+    font-family: 'Balsamiq Sans';
+    color: white;
+}
+
+#firstname,#lastname,#email,#phoneNumber,#password,#confPassword{
+    width: 250px;
+    border-radius: 0pc;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    font-family: 'Balsamiq Sans';
+    height: 50px;
+}
+
+#submitbtn{
+    margin-left: 50px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    border-width: 1px;
+    border-color: #BEFDFF;
+    background-color: #BEFDFF;
+    font-family: 'Balsamiq Sans';
+    font-size: 18px;
+    font-weight: bold;
+    color: #1B7C80;
+}
+
+#submitbtn:hover{
+    color: #674BE4;
+    border-color: #674BE4;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+}

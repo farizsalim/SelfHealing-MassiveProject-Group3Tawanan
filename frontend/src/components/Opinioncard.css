@@ -1,0 +1,41 @@
+#cardbodyback{
+    padding: 10px;
+    height: 25rem;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#opcardbody{
+    top: 5rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: #7FD1D3;
+}
+
+.userimg{
+    position: absolute;
+    bottom: 280px;
+    left: 7rem;
+}
+
+.usernamecard{
+    font-family: 'Balsamiq Sans';
+    font-size: 24px;
+    color: #003169;
+    font-weight: bold;
+}
+
+.comcard{
+    padding: 0 30px;
+    font-family: 'Balsamiq Sans';
+    font-size: 18px;
+    color: #003169;
+}
+
+.profcard{
+    color: #0091A0;
+    font-family: 'Balsamiq Sans';
+    font-size: 20px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,29 @@
+#cardbanner{
+    width: 70rem;
+    height: 25rem;
+    background-color: #FFFFFF;
+    border-radius: 80px;
+    border-color: #7FD1D3;
+    border-width: 4px;
+    box-shadow: 10px 10px rgba(57, 56, 56, 0.2);
+}
+.bannertitle{
+    padding: 20px 50px;
+    font-weight: bold;
+    font-family: 'Balsamiq Sans';
+    font-size: 48px;
+    color: black;
+}
+
+.bannertxt{
+    padding: 5px 50px;
+    font-family: 'Balsamiq Sans';
+    font-size: 18px;
+    color: black;
+}
+
+.iconimage{
+    position: absolute;
+    left: 65rem;
+    top: 200px;
+}

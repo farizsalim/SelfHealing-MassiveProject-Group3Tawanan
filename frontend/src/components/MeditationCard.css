@@ -1,0 +1,35 @@
+#card-link{
+    text-decoration: none;
+}
+
+#card-link:hover{
+    opacity: 90%;
+}
+
+#therapycard{
+    width: 20rem;
+    border-radius: 0px;
+    background-color: #E4CCFF;
+}
+
+.imgtr{
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+}
+
+.title-card{
+    display: block;
+    font-family: 'Balsamiq Sans';
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+.text-card{
+    display: block;
+    font-family: 'Balsamiq Sans';
+    font-size: 15px;
+    color: #000000;
+    text-decoration: none;
+}

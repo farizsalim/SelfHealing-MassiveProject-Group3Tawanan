@@ -1,0 +1,44 @@
+.body-footer{
+    border-top: 3px solid black;
+    margin-top: 100px;
+    background-color: #8266FF;
+    margin-bottom: 0px;
+}
+
+.col-logo{
+    padding: 50px 0 0 0;
+}
+
+.quotes-text{
+    width: 300px;
+    padding: 30px 0px;
+    font-family: 'Balsamiq Sans';
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.title-txt{
+    padding: 40px 30px 0px 30px;
+    font-family: 'Balsamiq Sans';
+    font-size: 21px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navfoot-txt{
+    padding: 5px 30px;
+    font-family: 'Balsamiq Sans';
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.media-social{
+    display: flex;
+}
+
+.icon-medsos{
+    margin: 0 15px;
+}
