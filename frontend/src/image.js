@@ -20,6 +20,12 @@ import Bgsignup from "./images/Bgsignup.png"
 import BgTroom from "./images/Bgroomteraphy.png"
 import Theraphy1 from "./images/therapy1.png"
 import Bgkarir from "./images/bgkarir.png" 
+import Icontas from "./images/icontas.png"
+import Iconlokasi from "./images/iconlokasi.png"
+import Icondolar from "./images/icondolar.png"
+import Iconpengalamankerja from "./images/iconpengalamankerja.png"
+import Icondokter from "./images/icondokter.png"
+import Iconspeaker from "./images/iconspeaker.png"
 
 const homebackg = homeback;
 const bglogin = Bglogin
@@ -43,7 +49,15 @@ const bgsignup = Bgsignup;
 const btroom = BgTroom;
 const therapy1 = Theraphy1;
 const bgkarir = Bgkarir;
+const icontas = Icontas;
+const iconlokasi = Iconlokasi;
+const icondolar = Icondolar;
+const iconpengalamankerja = Iconpengalamankerja;
+const icondokter = Icondokter;
+const iconspeaker = Iconspeaker;
+
 
 export {homebackg,logo,product1,product2,product3,leaves1,leaves2,user1,rightarrow,leftarrow,emailvector,wavector,logo2
-        ,insta,ytb,fb,twit,bglogin,bgsignup,btroom,therapy1,bgkarir
+        ,insta,ytb,fb,twit,bglogin,bgsignup,btroom,therapy1,bgkarir,icontas,icondolar,iconlokasi,iconpengalamankerja,
+        icondokter,iconspeaker
 };

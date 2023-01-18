@@ -1,7 +1,7 @@
 import { Card } from "react-bootstrap";
 import "./Cardproduct.css" 
 
- const Cardproduct = ({img,text}) =>{
+const Cardproduct = ({img,text}) =>{
     return(
         <section>
             <Card id="cardbody">
@@ -10,6 +10,6 @@ import "./Cardproduct.css"
             </Card>
         </section>
     )  
- }
+}
 
- export default Cardproduct;
+export default Cardproduct;

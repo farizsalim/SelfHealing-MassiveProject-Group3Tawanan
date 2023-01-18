@@ -1,0 +1,66 @@
+#bodycard-karir {
+  background-color: #8266FF;
+  width: 346px;
+  height: 378px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.title-karir {
+  font-family: 'Balsamiq Sans';
+  top: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  padding: 0px;
+  color: #FFFFFF;
+}
+
+.icon-karir {
+  width: 24px;
+}
+
+.text-karir {
+  font-family: 'Balsamiq Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
+.btn-lamar {
+  padding: 10px 0px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border-style: none;
+  margin-bottom: 10px;
+  margin-top: 30px;
+
+  font-family: 'Balsamiq Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #8266FF;
+}
+
+.btn-detail {
+  padding: 10px 0px;
+  background: none;
+  border-radius: 20px;
+  border: 1px solid #FFFFFF;
+
+  font-family: 'Balsamiq Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
