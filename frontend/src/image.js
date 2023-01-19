@@ -71,11 +71,6 @@ const tes3 = Tes3;
 
 
 export {homebackg,logo,product1,product2,product3,leaves1,leaves2,user1,rightarrow,leftarrow,emailvector,wavector,logo2
-<<<<<<< HEAD
-        ,insta,ytb,fb,twit,bglogin,bgsignup,btroom,therapy1,bgkarir,icontas,icondolar,iconlokasi,iconpengalamankerja,
+        ,insta,ytb,fb,twit,bglogin,bgsignup,btroom,therapy1,bgkarir,userimg,icontas,icondolar,iconlokasi,iconpengalamankerja,
         icondokter,iconspeaker,bglineartes,bgtes,tes1,tes2,tes3,
-=======
-        ,insta,ytb,fb,twit,bglogin,bgsignup,btroom,therapy1,bgkarir,icontas,icondolar,iconlokasi,iconpengalamankerja,userimg,
-        icondokter,iconspeaker
->>>>>>> 02047a6989648b3183a639df3ba3d421b70eff4b
 };

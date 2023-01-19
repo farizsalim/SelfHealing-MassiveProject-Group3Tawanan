@@ -2,14 +2,10 @@ import {Navbar,NavDropdown,Nav,Container} from "react-bootstrap"
 import { NavLink} from "react-router-dom"
 import { logo, userimg } from "../image"
 import "./Navs.css"
-<<<<<<< HEAD
 import { HOME, JENK, LOGIN, SIGNUP, TROOM, TKES } from "../routes"
-=======
-import { HOME, JENK, LOGIN, SIGNUP, TROOM } from "../routes"
 import { useState,useEffect } from "react"
 import jwtDecode from "jwt-decode";
 
->>>>>>> 02047a6989648b3183a639df3ba3d421b70eff4b
 
 const Navs = () => {
     const getToken = localStorage.getItem(process.env.REACT_APP_AUTH);

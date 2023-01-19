@@ -1,0 +1,97 @@
+.pertanyaan {
+  font-family: 'Balsamiq Sans';
+  font-weight: 700;
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.lbl-rd1 {
+  display: inline-block;
+  border: 2px solid #154E5D;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.rd-form1 {
+  display: none;
+}
+
+.rd-form1:checked+.lbl-rd1 {
+  background: #154E5D;
+}
+
+.lbl-rd2 {
+  display: inline-block;
+  border: 2px solid #154E5D;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.rd-form2 {
+  display: none;
+}
+
+.rd-form2:checked+.lbl-rd2 {
+  background: #154E5D;
+}
+
+.lbl-rd3 {
+  display: inline-block;
+  border: 2px solid #154E5D;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.rd-form3 {
+  display: none;
+}
+
+.rd-form3:checked+.lbl-rd3 {
+  background: #154E5D;
+}
+
+.lbl-rd4 {
+  display: inline-block;
+  border: 2px solid #154E5D;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.rd-form4 {
+  display: none;
+}
+
+.rd-form4:checked+.lbl-rd4 {
+  background: #154E5D;
+}
+
+.ket-jawaban {
+  font-family: 'Balsamiq Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.line-form {
+  border: 1px solid #000000;
+  margin-top: 20px;
+}
