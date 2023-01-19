@@ -11,8 +11,8 @@ const conn = createPool({
 module.exports = {
     query : async (query) => {
         try {
-           const [execute] = await conn.query(query);
-           return execute;
+            const [execute] = await conn.query(query);
+            return execute;
         } catch (error) {
             console.log(error);
         }

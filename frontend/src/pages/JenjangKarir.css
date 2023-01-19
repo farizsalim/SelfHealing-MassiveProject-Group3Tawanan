@@ -1,4 +1,4 @@
-.bgkarir{
+.bgkarir {
     position: absolute;
     object-fit: cover;
     margin-top: 10px;
@@ -7,7 +7,7 @@
     top: 0;
 }
 
-.titlekarir{
+.titlekarir {
     text-align: center;
     font-family: 'Balsamiq Sans';
     font-size: 50px;
@@ -15,8 +15,23 @@
     margin-top: 200px;
 }
 
-.quoteskarir{
+.quoteskarir {
     text-align: center;
     font-family: 'Balsamiq Sans';
     font-size: 20px;
+}
+
+.card-dokter{
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+
+.subtitle-karir {
+    font-family: 'Balsamiq Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-left: 10px;
 }
