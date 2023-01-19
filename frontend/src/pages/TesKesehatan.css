@@ -1,0 +1,28 @@
+.bglineartes {
+  position: absolute;
+  object-fit: cover;
+  margin-top: 10px;
+  width: 100%;
+  z-index: -10;
+  top: 188px;
+}
+
+.bgtes {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  z-index: -10;
+  top: 471px;
+}
+
+.title-tkes {
+  font-family: 'Balsamiq Sans';
+  width: 778px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-top: 160px;
+}

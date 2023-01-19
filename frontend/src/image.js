@@ -26,6 +26,11 @@ import Icondolar from "./images/icondolar.png"
 import Iconpengalamankerja from "./images/iconpengalamankerja.png"
 import Icondokter from "./images/icondokter.png"
 import Iconspeaker from "./images/iconspeaker.png"
+import Bglineartes from "./images/bglineartes.png"
+import Bgtes from "./images/bgtes.png"
+import Tes1 from "./images/tes1.png"
+import Tes2 from "./images/tes2.png"
+import Tes3 from "./images/tes3.png"
 
 const homebackg = homeback;
 const bglogin = Bglogin
@@ -55,9 +60,14 @@ const icondolar = Icondolar;
 const iconpengalamankerja = Iconpengalamankerja;
 const icondokter = Icondokter;
 const iconspeaker = Iconspeaker;
+const bglineartes = Bglineartes;
+const bgtes = Bgtes;
+const tes1 = Tes1;
+const tes2 = Tes2;
+const tes3 = Tes3;
 
 
 export {homebackg,logo,product1,product2,product3,leaves1,leaves2,user1,rightarrow,leftarrow,emailvector,wavector,logo2
         ,insta,ytb,fb,twit,bglogin,bgsignup,btroom,therapy1,bgkarir,icontas,icondolar,iconlokasi,iconpengalamankerja,
-        icondokter,iconspeaker
+        icondokter,iconspeaker,bglineartes,bgtes,tes1,tes2,tes3,
 };

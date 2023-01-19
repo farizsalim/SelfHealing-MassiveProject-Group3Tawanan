@@ -2,7 +2,7 @@ import {Navbar,NavDropdown,Nav,Container} from "react-bootstrap"
 import { NavLink} from "react-router-dom"
 import { logo } from "../image"
 import "./Navs.css"
-import { HOME, JENK, LOGIN, SIGNUP, TROOM } from "../routes"
+import { HOME, JENK, LOGIN, SIGNUP, TROOM, TKES } from "../routes"
 
 const Navs = () => {
     return(
@@ -15,7 +15,7 @@ const Navs = () => {
                     <NavLink className="navtext mt-2" to={HOME}>Home</NavLink>
                     <NavDropdown className="navtext" title="Layanan" id="navdrop">
                         <NavLink className="navtext2" to={TROOM}>Ruang Terapi</NavLink>
-                        <NavLink className="navtext2">Tes Kesehatan</NavLink>
+                        <NavLink className="navtext2" to={TKES}>Tes Kesehatan</NavLink>
                         <NavLink className="navtext2">Blog/Artikel</NavLink>
                     </NavDropdown>
                     <NavLink className="navtext mt-2" to={JENK}>Jenjang Karir</NavLink>
