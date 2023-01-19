@@ -1,9 +1,10 @@
 import { Col, Row} from "react-bootstrap";
 import { bgsignup } from "../image";
 import "./Signup.css"
-import { postApi } from "../api/axios";
 import { useForm } from "react-hook-form";
 import {useNavigate} from "react-router-dom"
+import Swal from "sweetalert2";
+import axios from "axios";
 
 const Signup = () => {
         const { register, formState: { errors }, handleSubmit } = useForm();
@@ -19,10 +20,10 @@ const Signup = () => {
             }
             try {
                 console.log(value);
-                await postApi("http://localhost:8000/api/v1/register-user", value);
+                await axios.post("http://localhost:8000/api/v1/register-user", value);
                 navigate("/registrationsuccess");
             } catch (error) {
-                
+                Swal.fire("Failed !",error.response.data.message, "error")
             }
         };
 

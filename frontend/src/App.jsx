@@ -8,7 +8,6 @@ import Troom from "./pages/TherapyRoom";
 import RegSuccess from "./pages/RegSuccess";
 import JenjangKarir from "./pages/JenjangKarir";
 
-
 const App = () => {
   return (
     <section>

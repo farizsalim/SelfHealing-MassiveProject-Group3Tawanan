@@ -20,6 +20,7 @@ import Bgsignup from "./images/Bgsignup.png"
 import BgTroom from "./images/Bgroomteraphy.png"
 import Theraphy1 from "./images/therapy1.png"
 import Bgkarir from "./images/bgkarir.png" 
+import Userimg from "./images/userimg.png"
 
 const homebackg = homeback;
 const bglogin = Bglogin
@@ -43,7 +44,8 @@ const bgsignup = Bgsignup;
 const btroom = BgTroom;
 const therapy1 = Theraphy1;
 const bgkarir = Bgkarir;
+const userimg = Userimg;
 
 export {homebackg,logo,product1,product2,product3,leaves1,leaves2,user1,rightarrow,leftarrow,emailvector,wavector,logo2
-        ,insta,ytb,fb,twit,bglogin,bgsignup,btroom,therapy1,bgkarir
+        ,insta,ytb,fb,twit,bglogin,bgsignup,btroom,therapy1,bgkarir,userimg
 };
