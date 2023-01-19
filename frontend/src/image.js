@@ -20,6 +20,7 @@ import Bgsignup from "./images/Bgsignup.png"
 import BgTroom from "./images/Bgroomteraphy.png"
 import Theraphy1 from "./images/therapy1.png"
 import Bgkarir from "./images/bgkarir.png" 
+import Userimg from "./images/userimg.png"
 import Icontas from "./images/icontas.png"
 import Iconlokasi from "./images/iconlokasi.png"
 import Icondolar from "./images/icondolar.png"
@@ -54,6 +55,7 @@ const bgsignup = Bgsignup;
 const btroom = BgTroom;
 const therapy1 = Theraphy1;
 const bgkarir = Bgkarir;
+const userimg = Userimg;
 const icontas = Icontas;
 const iconlokasi = Iconlokasi;
 const icondolar = Icondolar;
@@ -67,7 +69,13 @@ const tes2 = Tes2;
 const tes3 = Tes3;
 
 
+
 export {homebackg,logo,product1,product2,product3,leaves1,leaves2,user1,rightarrow,leftarrow,emailvector,wavector,logo2
+<<<<<<< HEAD
         ,insta,ytb,fb,twit,bglogin,bgsignup,btroom,therapy1,bgkarir,icontas,icondolar,iconlokasi,iconpengalamankerja,
         icondokter,iconspeaker,bglineartes,bgtes,tes1,tes2,tes3,
+=======
+        ,insta,ytb,fb,twit,bglogin,bgsignup,btroom,therapy1,bgkarir,icontas,icondolar,iconlokasi,iconpengalamankerja,userimg,
+        icondokter,iconspeaker
+>>>>>>> 02047a6989648b3183a639df3ba3d421b70eff4b
 };

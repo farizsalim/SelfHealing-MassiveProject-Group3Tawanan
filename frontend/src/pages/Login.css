@@ -28,7 +28,7 @@
     color: #674BE4;
 }
 
-#passfield,#emailfield{
+.passfield,#emailfield{
     border-radius: 0pc;
     border-color: black;
     border-width: 2px;
@@ -37,9 +37,9 @@
     height: 50px;
 }
 
-#loginbtn{
+.loginbtn{
     margin: 20px;
-    padding: 5px 60px;
+    padding: 5px 30px;
     border-radius: 50px;
     border-radius: 50px;
     border-width: 1px;
@@ -51,9 +51,9 @@
     color: white;
 }
 
-#signupbtn{
+.signupbtn{
     margin: 23px;
-    padding: 5px 40px;
+    padding: 5px 30px;
     border-radius: 50px;
     border-width: 1px;
     border-color: #BEFDFF;
@@ -64,7 +64,7 @@
     color: #1B7C80;
 }
 
-#signupbtn:hover{
+.signupbtn:hover{
     color: #674BE4;
     border-color: #674BE4;
     border-style: solid;
@@ -72,7 +72,7 @@
     background-color: white;
 }
 
-#loginbtn:hover{
+.loginbtn:hover{
     color: #674BE4;
     border-color: #674BE4;
     border-style: solid;
@@ -89,4 +89,12 @@
 
 .forgetpass:hover{
     color: #674BE4;
+}
+
+#emaillog,#passwordlog{
+    border-radius: 0pc;
+    border-color: black;
+    border-style: solid;
+    font-family: 'Balsamiq Sans';
+    height: 50px;
 }

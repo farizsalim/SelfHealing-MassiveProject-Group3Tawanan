@@ -9,7 +9,6 @@ import RegSuccess from "./pages/RegSuccess";
 import JenjangKarir from "./pages/JenjangKarir";
 import TesKesehatan from "./pages/TesKesehatan";
 
-
 const App = () => {
   return (
     <section>

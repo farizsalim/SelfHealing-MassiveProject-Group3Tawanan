@@ -1,7 +1,8 @@
 const {query} = require('../database/config')
 const bcrypt = require('bcryptjs');
 const {date} = require('../utils');
-
+require('dotenv').config()
+const jwt = require('jsonwebtoken')
 
 module.exports ={
     registerController: async (req, res) => {
@@ -52,15 +53,26 @@ module.exports ={
         }
         
         try {
-            const checkUser = await query(`SELECT id FROM users WHERE email = '${email}'`)
-            if(checkUser.length === 0) return res.status(400).json({message : "Invalid Email"});
-            const getPassword = await query(`SELECT password FROM users WHERE email = '${email}'`);
-            const arrayPassword = ({user:getPassword})
-            const match = await bcrypt.compare(password, `${arrayPassword.user[0].password}`);
+            const [checkUser] = await query(`SELECT id, fname, lname, password, phone_number  FROM users WHERE email = '${email}'`)
+            if(checkUser === undefined) return res.status(400).json({message : "Invalid Email"});
+            const match = await bcrypt.compare(password, checkUser.password);
             if(!match) {
                 return res.status(400).json({message: "Wrong Password"});
             }
-            return res.status(200).json({message: "Login Success"});
+            const data = {
+                id: checkUser.id,
+                fname: checkUser.fname,
+                lname:checkUser.lname
+            };
+
+
+
+            console.log(data);
+
+            const token = await jwt.sign(data, process.env.WEBTOKEN, { expiresIn: '1h' });
+            return res.status(200).json({Authorization: `bearer ${token}`});
+
+
             
         } catch (error) {
             return res.status(400).json({message: "Akun tidak ditemukan!"});

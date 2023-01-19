@@ -1,4 +1,5 @@
 const {createPool} = require('mysql2/promise');
+require('dotenv').config()
 
 const conn = createPool({
     password: process.env.DATABASE_PASS,
