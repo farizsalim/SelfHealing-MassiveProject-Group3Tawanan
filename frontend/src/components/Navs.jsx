@@ -2,7 +2,7 @@ import {Navbar,NavDropdown,Nav,Container} from "react-bootstrap"
 import { NavLink} from "react-router-dom"
 import { logo, userimg } from "../image"
 import "./Navs.css"
-import { HOME, JENK, LOGIN, SIGNUP, TROOM, TKES } from "../routes"
+import { HOME, JENK, LOGIN, SIGNUP, TROOM, TKES, PROFILE } from "../routes"
 import { useState,useEffect } from "react"
 import jwtDecode from "jwt-decode";
 
@@ -32,7 +32,7 @@ const Navs = () => {
                     Hi, {decode.fname} <img src={userimg} alt="" width={"30px"} height={"30px"}/>
                 </NavLink>
                 <ul className="dropdown-menu">
-                    <li><NavLink className="dropdown-item navtext2" to="" id="navdrop">Profile</NavLink></li>
+                    <li><NavLink className="dropdown-item navtext2" to={PROFILE} id="navdrop">Profile</NavLink></li>
                     <li><NavLink className="dropdown-item navtext2" onClick={logout} id="navdrop">Log Out</NavLink></li>
                 </ul>
             </div>
