@@ -1,4 +1,4 @@
-import { Container, Card } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Footer from "../components/Footer"
 import "./Profile.css";
 
@@ -6,20 +6,40 @@ const Profile = () => {
   return (
     <section>
       <Container>
-        <div>
-          <h1 className="title-aktivitas">Aktivitas</h1>
-          <div className="line-aktivitas"></div>
+        <div className="aktivity">
+          <div className="title-profile">
+            <h1>Aktivitas</h1>
+            <div className="line-profile"></div>
+          </div>
+          <div className="card-aktivity">
+            <div className="hcard-aktivity">
+              <h1>Deskripsikan mood kamu hari ini</h1>
+            </div>
+            <div className="tcard-aktivity">
+              <input type="text" name="textaktivity" className="text-akitivity" placeholder="mood kamu hari ini..." />
+            </div>
+            <div className="d-flex justify-content-end mt-5">
+              <button className="btn-aktivity">Lihat semua</button>
+            </div>
+          </div>
         </div>
-        <Card style={{ borderStyle: "none" }}>
-          <Card.Body className="card-aktivity">
-            <Card.Title>
-              <h1 className="hcard-aktivity">Deskripsikan mood kamu hari ini</h1>
-            </Card.Title>
-            <Card.Text className="tcard-aktivity">
-              <h3>mood kamu hari ini...</h3>
-            </Card.Text>
-          </Card.Body>
-        </Card>
+        <div className="mb-5">
+        <div className="title-profile">
+            <h1>Grafik moodmu</h1>
+            <div className="line-profile"></div>
+          </div>
+          <div className="card-aktivity">
+            <div className="hcard-aktivity">
+              <h1>Deskripsikan mood kamu hari ini</h1>
+            </div>
+            <div className="tcard-aktivity">
+              <input type="text" name="textaktivity" className="text-akitivity" placeholder="mood kamu hari ini..." />
+            </div>
+            <div className="d-flex justify-content-end mt-5">
+              <button className="btn-aktivity">Lihat semua</button>
+            </div>
+          </div>
+        </div>
       </Container>
       <Footer />
     </section>
