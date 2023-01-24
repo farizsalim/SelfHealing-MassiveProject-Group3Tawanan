@@ -163,7 +163,7 @@ const TesKesehatan = () => {
         : (
         <section>
             <img src={bgtes} alt="bgtes" className="bgtes"/>
-           <img src={bglineartes} alt="bglineartes" className="bglineartes" />
+            <img src={bglineartes} alt="bglineartes" className="bglineartes" />
       <Container>
         <img src={bgtes} alt="bgtes" className="bgtes"/>
         <div className="d-flex justify-content-center">

@@ -1,4 +1,4 @@
-import { Container,Row,Col, Button } from "react-bootstrap";
+import { Container,Row,Col,Button } from "react-bootstrap";
 import "./CardList.css"
 import MedCard from "./MeditationCard";
 import Footer from "./Footer";

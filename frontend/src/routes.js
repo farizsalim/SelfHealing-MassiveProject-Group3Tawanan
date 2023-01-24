@@ -4,6 +4,8 @@ const SIGNUP = "/signuppage"
 const TROOM = "/therapyroompage"
 const JENK = "/jenjangkarir"
 const TKES = "/teskesehatan"
-const PROFILE = "/Profile"
+const PROFILE = "/profile"
+const BLOG = "/blog"
+const ARTIKEL = "/artikel"
 
-export {HOME,LOGIN,SIGNUP,TROOM,JENK,TKES,PROFILE};
+export {HOME,LOGIN,SIGNUP,TROOM,JENK,TKES,PROFILE,BLOG,ARTIKEL};

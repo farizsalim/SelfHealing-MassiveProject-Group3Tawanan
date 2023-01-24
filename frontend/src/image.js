@@ -32,6 +32,14 @@ import Bgtes from "./images/bgtes.png"
 import Tes1 from "./images/tes1.png"
 import Tes2 from "./images/tes2.png"
 import Tes3 from "./images/tes3.png"
+import Bgartikel from "./images/bgartikel.png"
+import Imgartikel from "./images/imgartikel.png"
+import Artikel1 from "./images/artikel1.png"
+import Artikel2 from "./images/artikel2.png"
+import Artikel3 from "./images/artikel3.png"
+import Artikel4 from "./images/artikel4.png"
+import Artikel5 from "./images/artikel5.png"
+import Artikel6 from "./images/artikel6.png"
 
 const homebackg = homeback;
 const bglogin = Bglogin
@@ -67,10 +75,18 @@ const bgtes = Bgtes;
 const tes1 = Tes1;
 const tes2 = Tes2;
 const tes3 = Tes3;
-
+const bgartikel = Bgartikel;
+const imgartikel = Imgartikel;
+const artikel1 = Artikel1;
+const artikel2 = Artikel2;
+const artikel3 = Artikel3;
+const artikel4 = Artikel4;
+const artikel5 = Artikel5;
+const artikel6 = Artikel6;
 
 
 export {homebackg,logo,product1,product2,product3,leaves1,leaves2,user1,rightarrow,leftarrow,emailvector,wavector,logo2
         ,insta,ytb,fb,twit,bglogin,bgsignup,btroom,therapy1,bgkarir,userimg,icontas,icondolar,iconlokasi,iconpengalamankerja,
-        icondokter,iconspeaker,bglineartes,bgtes,tes1,tes2,tes3,
+        icondokter,iconspeaker,bglineartes,bgtes,tes1,tes2,tes3,bgartikel,imgartikel,artikel1,artikel2,artikel3,artikel4,artikel5,
+        artikel6,
 };

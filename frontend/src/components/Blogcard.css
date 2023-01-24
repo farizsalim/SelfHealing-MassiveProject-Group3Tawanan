@@ -1,0 +1,38 @@
+#card-link {
+  text-decoration: none;
+}
+
+#card-link:hover {
+  opacity: 90%;
+}
+
+.blogcard {
+  width: 347px;
+  border-radius: 0px;
+  background: transparent;
+}
+
+.body-blogcard{
+  background: none;
+}
+
+.text-cardblog {
+  display: block;
+  font-family: 'Balsamiq Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.title-cardblog {
+  display: block;
+  font-family: 'Balsamiq Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}

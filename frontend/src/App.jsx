@@ -1,6 +1,6 @@
 import {Routes,Route} from "react-router-dom"
 import Home from "./pages/Home";
-import {HOME, JENK, LOGIN, SIGNUP, TROOM, TKES, PROFILE} from "./routes";
+import {HOME, JENK, LOGIN, SIGNUP, TROOM, TKES, PROFILE, BLOG, ARTIKEL} from "./routes";
 import Navs from "./components/Navs"
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -9,6 +9,8 @@ import RegSuccess from "./pages/RegSuccess";
 import JenjangKarir from "./pages/JenjangKarir";
 import TesKesehatan from "./pages/TesKesehatan";
 import Profile from "./pages/Profile";
+import Blog from "./pages/Blog";
+import Artikel from "./pages/Artikel"
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
         <Route element={<JenjangKarir/>} path={JENK}/>
         <Route element={<TesKesehatan/>} path={TKES}/>
         <Route element={<Profile/>} path={PROFILE}/>
+        <Route element={<Blog/>} path={BLOG}/>
+        <Route element={<Artikel/>} path={ARTIKEL}/>
       </Routes>
     </section>
   );

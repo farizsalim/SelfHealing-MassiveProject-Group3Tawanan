@@ -1,0 +1,36 @@
+#card-artikel {
+  border-radius: 10px;
+  border-style: none;
+  height: 300px;
+}
+
+.body-artikelcard {
+  background: transparent;
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  border-color:  #000000;
+  border-radius: 0 0 10px 10px;
+}
+
+#img-artikelcard {
+  height: 160px;
+  border-radius: 10px 10px 0 0;
+}
+
+.text-artikelcard {
+  font-family: 'Balsamiq Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.title-artikelcard {
+  font-family: 'Balsamiq Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}

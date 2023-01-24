@@ -12,6 +12,6 @@ export const postApi = async (api, data) =>{
             icon: 'error',
             title: 'Oops...',
             text: 'Something went wrong!'
-          })
+        })
     }
 }

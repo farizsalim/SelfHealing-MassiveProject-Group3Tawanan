@@ -1,0 +1,36 @@
+.bodyblog{
+  padding: 50px 100px;
+  margin: 80px 0px;
+  background-color: rgb(130, 102, 255, 0.7);
+  border-radius: 20px;
+  height: min-content;
+  margin-top: 210px;
+}
+
+.title-cardlistblog{
+  display: block;
+  font-family: 'Balsamiq Sans';
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+#btn-next{
+  background-color: #018465;
+  font-family: 'Balsamiq Sans';
+  font-size: 20px;
+  color: #FFFFFF;
+  border-radius: 50px;
+}
+
+.btn-txt{
+  margin: auto;
+  padding: 5px 10px;
+  border-color: #02306A;
+  border-style: solid;
+  border-radius: 50px;
+}
+
+#btn-next:hover{
+  opacity: 80%;
+}
