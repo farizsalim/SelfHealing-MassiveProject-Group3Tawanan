@@ -1,82 +1,110 @@
-.aktivity {
-  margin-top: 210px;
-  margin-bottom: 100px;
-}
-
-.title-profile h1{
+.title-aktivitas {
   font-family: 'Balsamiq Sans';
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 0.01em;
   color: #0091A0;
+  margin-top: 210px;
 }
+  .aktivity {
+    margin-top: 210px;
+    margin-bottom: 100px;
+  }
+  
+  .title-profile h1{
+    font-family: 'Balsamiq Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #0091A0;
+    margin-top: 210px;
+  }
+  
+  .line-aktivitas {
+    width: 191px;
+  }
 
-.line-profile {
-  width: 190px;
-  height: 10px;
-  background: #D9D9D9;
-  border-radius: 20px;
-}
+  .line-profile {
+    width: 190px;
+    height: 10px;
+    background: #D9D9D9;
+    border-radius: 20px;
+  }
+  .card-aktivity {
+    height: 394px;
+    background: #6B64E9;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+  
+  .hcard-aktivity {
+    
+  }
+  
+  .hcard-aktivity h1 {
+    font-family: 'Balsamiq Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+  }
+  
+  .tcard-aktivity {
+    height: 293px;
+    left: 64px;
+    top: 400px;
+    background: #837DFB;
+    height: 300px;
+    border-radius: 20px;
+  }
+  
+  .tcard-aktivity h3 {
+    font-family: 'Balsamiq Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    opacity: 0.5;
+  }
 
-.card-aktivity {
-  height: 394px;
-  background: #6B64E9;
-  border-radius: 20px;
-  margin-top: 20px;
-  box-sizing: border-box;
-}
-
-.hcard-aktivity {
-  padding: 15px;
-}
-
-.hcard-aktivity h1 {
-  font-family: 'Balsamiq Sans';
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-  text-align: center;
-  letter-spacing: 0.01em;
-  color: #FFFFFF;
-}
-
-.tcard-aktivity {
-  height: 300px;
-}
-
-.text-akitivity {
-  font-family: 'Balsamiq Sans';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.01em;
-  background: #837DFB;
-  border-style: none;
-  color: #FFFFFF;
-  border-radius: 0px 0px 20px 20px;
-  height: 100%;
-  width: 100%;
-  outline: none;
-}
-
-.text-akitivity::placeholder {
-  color: #FFFFFF;
-  opacity: 0.5;
-}
-
-.btn-aktivity {
-  width: 178px;
-  height: 46px;
-  background: #207173;
-  border-radius: 10px;
-  border-style: none;
-  font-family: 'Balsamiq Sans';
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: 0.01em;
-  color: #FFFFFF;
-}
+  .text-akitivity {
+    font-family: 'Balsamiq Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    background: #837DFB;
+    border-style: none;
+    color: #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+  }
+  
+  .text-akitivity::placeholder {
+    color: #FFFFFF;
+    opacity: 0.5;
+  }
+  
+  .btn-aktivity {
+    width: 178px;
+    height: 46px;
+    background: #207173;
+    border-radius: 10px;
+    border-style: none;
+    font-family: 'Balsamiq Sans';
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+  }

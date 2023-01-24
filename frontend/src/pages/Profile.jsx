@@ -22,8 +22,8 @@ const Profile = () => {
         </div>
         <Card style={{ borderStyle: "none" }}>
           <Card.Body className="card-aktivity">
-            <Card.Title>
-              <h1 className="hcard-aktivity">Deskripsikan mood kamu hari ini</h1>
+            <Card.Title className="hcard-aktivity">
+              <h1 >Deskripsikan mood kamu hari ini</h1>
             </Card.Title>
             <Card.Text className="tcard-aktivity">
               <h3>mood kamu hari ini...</h3>
