@@ -1,6 +1,8 @@
 import { Card, Row, Col } from "react-bootstrap";
 import "./Cardjkarir.css";
 import { icontas, icondolar, iconlokasi, iconpengalamankerja } from "../image";
+import { DETK } from "../routes";
+import { NavLink } from "react-router-dom";
 
 const Cardjkarir = ({ title, bidang, lokasi, gaji, pglmnkerja }) => {
   return (
@@ -32,7 +34,9 @@ const Cardjkarir = ({ title, bidang, lokasi, gaji, pglmnkerja }) => {
           </div>
         </Card.Text>
         <button className="btn-lamar">Lamar</button>
-        <button className="btn-detail">Lihat Detail</button>
+        <NavLink to={DETK}>
+          <button className="btn-detail">Lihat Detail</button>
+        </NavLink>
       </Card>
     </section>
   )

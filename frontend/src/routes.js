@@ -7,5 +7,6 @@ const TKES = "/teskesehatan"
 const PROFILE = "/profile"
 const BLOG = "/blog"
 const ARTIKEL = "/artikel"
+const DETK = "/detailkarir"
 
-export {HOME,LOGIN,SIGNUP,TROOM,JENK,TKES,PROFILE,BLOG,ARTIKEL};
+export {HOME,LOGIN,SIGNUP,TROOM,JENK,TKES,PROFILE,BLOG,ARTIKEL,DETK};

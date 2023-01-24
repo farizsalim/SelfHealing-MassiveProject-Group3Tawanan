@@ -1,0 +1,118 @@
+.detailkarir {
+  background-color: #F6F9FF;
+}
+
+.banner-detailk {
+  width: 100%;
+  margin-top: 141px;
+  background: #8266FF;
+  padding: 50px 0;
+}
+
+.btnkembali-detail {
+  font-family: 'Balsamiq Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  background: transparent;
+  border-style: none;
+}
+
+.btnkembali-detail:hover {
+  opacity: 80%;
+}
+
+.title-detailk {
+  font-family: 'Balsamiq Sans';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  margin: 30px 0;
+}
+
+.subtitle-detailk {
+  font-family: 'Balsamiq Sans';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+#card-syarat {
+  width: 807px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+}
+
+#body-syarat {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.title-syarat {
+  font-family: 'Balsamiq Sans';
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.01em;
+  color: #8266FF;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: #000000;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.subtitle-syarat {
+  font-family: 'Balsamiq Sans';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+#card-pendaftaran {
+  width: 346px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border-style: none;
+}
+
+#body-pendaftaran {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.title-pendaftaran {
+  font-family: 'Balsamiq Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #8266FF;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: #000000;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.text-pendaftaran {
+  font-family: 'Balsamiq Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}

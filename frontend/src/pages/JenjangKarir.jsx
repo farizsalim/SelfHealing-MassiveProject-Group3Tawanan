@@ -1,8 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap"
 import Footer from "../components/Footer";
-import { bgkarir } from "../image";
 import Cardjkarir from "../components/Cardjkarir";
-import { icondokter, iconspeaker } from "../image";
+import { icondokter, iconspeaker, bgkarir } from "../image";
 import "./JenjangKarir.css"
 import { useEffect,useState } from "react";
 import Loading from "../components/Loading";

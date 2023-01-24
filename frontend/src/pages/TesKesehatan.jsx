@@ -318,8 +318,8 @@ const TesKesehatan = () => {
       </Container>
         </section>
       )}
-     </section>
-     )}
+      </section>
+      )}
       <Footer/>
     </section>
   )

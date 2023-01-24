@@ -40,7 +40,6 @@
   border-style: none;
   margin-bottom: 10px;
   margin-top: 30px;
-
   font-family: 'Balsamiq Sans';
   font-weight: 400;
   font-size: 16px;
@@ -50,12 +49,16 @@
   color: #8266FF;
 }
 
+.btn-lamar:hover {
+  opacity: 80%;
+}
+
 .btn-detail {
   padding: 10px 0px;
+  width: 100%;
   background: none;
   border-radius: 20px;
   border: 1px solid #FFFFFF;
-
   font-family: 'Balsamiq Sans';
   font-weight: 400;
   font-size: 16px;
@@ -63,4 +66,8 @@
   text-align: center;
   letter-spacing: 0.01em;
   color: #FFFFFF;
+}
+
+.btn-detail:hover {
+  opacity: 80%;
 }
