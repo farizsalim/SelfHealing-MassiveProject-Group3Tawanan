@@ -6,9 +6,20 @@ import Footer from "../components/Footer"
 import { homebackg, leaves1, product1,product2,product3} from "../image"
 import "./Home.css"
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { useEffect } from "react"
+import { useState } from "react";
+import Loading from "../components/Loading"
 
 const Home = () => {
+    const [loading,setLoading] = useState(true)
+    useEffect(() => {
+        window.scrollTo(0, 0)
+        const timer = setTimeout(() => setLoading(false),200);
+        return () => clearTimeout(timer);
+        }, [])
     return(
+        <section>
+            {loading? <Loading/> : (
         <section className="Home">
             <img className="backgroundhome" src={homebackg} alt="backgroundhome" />
             <AnimationOnScroll animateIn="animate__fadeInRight" initiallyVisible={true}>
@@ -64,6 +75,8 @@ const Home = () => {
             </AnimationOnScroll>
             <Footer/>
         </section>
+        )}
+    </section>
     )
 }
 

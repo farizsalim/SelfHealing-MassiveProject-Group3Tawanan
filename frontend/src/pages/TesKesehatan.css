@@ -8,11 +8,25 @@
 }
 
 .bgtes {
+  height: 1600px;
   position: absolute;
   object-fit: cover;
   width: 100%;
   z-index: -10;
   top: 471px;
+  filter: brightness(130%);
+  opacity: 50%;
+}
+
+.bgtes2 {
+  height: 1000px;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  z-index: -10;
+  top: 471px;
+  filter: brightness(130%);
+  opacity: 50%;
 }
 
 .title-tkes {
@@ -21,7 +35,81 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 77px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-top: 160px;
+}
+
+.btn-selesai{
+  color: white;
+  background-color: #0E7758;
+  font-family: 'Balsamiq Sans';
+  font-weight: thin;
   text-align: center;
+  font-size: 24px;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.btn-selesai:hover{
+  filter: brightness(130%);
+}
+
+.card-body{
+  background-color: #8DDEE0;
+}
+
+.hasil-tes{
+  width: 60rem;
+}
+
+.card-title-hasiltest{
+  color:  #5135CE;
+  font-family: 'Balsamiq Sans';
+  font-weight: bold;
+  font-size: 55px;
+  padding: 0px 100px;
+}
+
+.card-text{ 
+  font-family: 'Balsamiq Sans';
+  font-size: 20px;
+}
+
+.btn-rterapi{
+  color: white;
+  background-color: #8266FF;
+  border-radius: 20px;
+  font-family: 'Balsamiq Sans';
+  font-size: 20px;
+  padding: 0px 20px;
+}
+
+.btn-rterapi:hover{
+  filter: brightness(120%);
+}
+
+.disclaimer{
+  width: 30rem;
+  border-radius: 20px;
+}
+.card-body-disclaimer{
+  background-color: #9A0101;
+}
+
+.card-text-disclaimer{
+  color: white;
+  font-family: 'Balsamiq Sans';
+  font-size: 20px;
+  padding: 0px 20px;
+}
+.title-tkes2{
+  padding-top: 100px;
+  font-family: 'Balsamiq Sans';
+  width: 778px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
   letter-spacing: 0.01em;
   color: #000000;
   margin-top: 160px;

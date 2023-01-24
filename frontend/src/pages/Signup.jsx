@@ -5,8 +5,12 @@ import { useForm } from "react-hook-form";
 import {useNavigate} from "react-router-dom"
 import Swal from "sweetalert2";
 import axios from "axios";
+import { useEffect } from "react";
 
 const Signup = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
         const { register, formState: { errors }, handleSubmit } = useForm();
         const navigate = useNavigate();
         const onSubmit = async (data) => {

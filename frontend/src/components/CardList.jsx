@@ -11,7 +11,7 @@ const Cardlist = () => {
                 <section>
                         <h1 className="titletherapy">Ruang Meditasimu</h1>
                             <Row xs={1} md={3} className="py-5">
-                                {Medroom.map((val, index) =>(
+                                {Medroom.map((val) =>(
                                     <Col className="p-3 d-flex justify-content-center">
                                         <MedCard title={val.title} img={val.img} text={val.text}/>
                                     </Col>
