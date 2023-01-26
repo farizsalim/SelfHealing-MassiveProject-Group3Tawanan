@@ -3,7 +3,7 @@ import "./Loading.css"
 const Loading = () => {
     return(
         <section className="d-flex justify-content-center">
-            <div class="lds-ring">
+            <div className="lds-ring">
                 <div></div>
                 <div></div>
                 <div></div>

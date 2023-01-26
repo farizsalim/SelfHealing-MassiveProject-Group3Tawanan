@@ -1,25 +1,25 @@
 import { Card } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./MeditationCard.css"
 
-const MedCard = ({img,title,text}) => {
+const MedCard = ({img,title,text,to}) => {
     return(
         <section>
-            <NavLink id="card-link">
+            <Link to={to}>
                 <Card className="text-center" id="therapycard">
                     <Card.Img className="imgtr" variant="top" src={img} />
                         <Card.Body>
                             <Card.Title>
-                                <p className="title-card">
+                                <h1 className="title-card">
                                     {title}
-                                </p>
+                                </h1>
                                 </Card.Title>
                             <Card.Text className="text-card">
                             {text}
                             </Card.Text>
                         </Card.Body>
                 </Card>
-            </NavLink>
+            </Link>
         </section>
     )
 }

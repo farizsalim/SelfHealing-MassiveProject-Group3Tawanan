@@ -28,7 +28,7 @@ const Navs = () => {
     token === true ? (
             <>
             <div className="dropdown navtext mt-2">
-                <NavLink className="navtext mt-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" >
+                <NavLink className="navtext mt-2 dropdown-toggle animate_animated animate__heartBeat animate__infinite	infinite animate__slow" data-bs-toggle="dropdown" aria-expanded="false" >
                     Hi, {decode.fname} <img src={userimg} alt="" width={"30px"} height={"30px"}/>
                 </NavLink>
                 <ul className="dropdown-menu">

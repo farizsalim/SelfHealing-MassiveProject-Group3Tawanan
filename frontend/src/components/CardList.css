@@ -33,3 +33,7 @@
 #btn-next:hover{
     opacity: 80%;
 }
+
+.item-therapy:hover{
+    transform: scale(1.1);
+}

@@ -5,11 +5,15 @@ import { useForm } from "react-hook-form";
 import {useNavigate} from "react-router-dom"
 import Swal from "sweetalert2";
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
+import Loading from "../components/Loading";
 
 const Signup = () => {
+    const [loading,setLoading] = useState(true)
     useEffect(() => {
         window.scrollTo(0, 0)
+        const timer = setTimeout(() => setLoading(false),200);
+        return () => clearTimeout(timer);
       }, [])
         const { register, formState: { errors }, handleSubmit } = useForm();
         const navigate = useNavigate();
@@ -24,7 +28,7 @@ const Signup = () => {
             }
             try {
                 console.log(value);
-                await axios.post("http://localhost:8000/api/v1/register-user", value);
+                await axios.post(`http://localhost:8000/api/v1/register-user`, value);
                 navigate("/registrationsuccess");
             } catch (error) {
                 Swal.fire("Failed !",error.response.data.message, "error")
@@ -33,6 +37,10 @@ const Signup = () => {
 
     return(
         <section>
+            {loading? <Loading/> : (
+            <section>
+
+            
              <img className="backgroundsignup" src={bgsignup} alt="backgroundsignup" />
              <h1 className="title text-center">Register</h1>
                 <form onSubmit={handleSubmit(onSubmit)} className="d-flex justify-content-center" id="regbody">
@@ -87,6 +95,8 @@ const Signup = () => {
                                 
                         </section>
                 </form>
+                </section>
+            )}
         </section>
     )
 }

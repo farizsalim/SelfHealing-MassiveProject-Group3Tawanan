@@ -2,16 +2,19 @@ import { bglogin } from "../image";
 import {Container} from "react-bootstrap"
 import "./Login.css"
 import { NavLink,useNavigate } from "react-router-dom";
-import { HOME, SIGNUP } from "../routes";
+import { SIGNUP } from "../routes";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import axios from "axios";
-import { useEffect } from "react";
-
+import { useEffect,useState } from "react";
+import Loading from "../components/Loading";
 
 const Login = () =>{
+    const [loading,setLoading] = useState(true)
     useEffect(() => {
         window.scrollTo(0, 0)
+        const timer = setTimeout(() => setLoading(false),200);
+        return () => clearTimeout(timer);
       }, [])
     const { register, formState: { errors }, handleSubmit } = useForm();
     const navigate = useNavigate();
@@ -21,7 +24,7 @@ const Login = () =>{
             console.log(data.fname);
             if(data.Authorization!== undefined){
                 localStorage.setItem(process.env.REACT_APP_AUTH, data.Authorization);
-                navigate({HOME},{replace: true});
+                navigate("/",{replace: true});
                 await window.location.reload()
             }
         } catch (error) {
@@ -30,6 +33,8 @@ const Login = () =>{
     };
 
     return(
+        <section>
+             {loading? <Loading/> : (
         <section>
             <img className="backgroundlogin" src={bglogin} alt="backgroundlogin" />
             <Container>
@@ -52,6 +57,8 @@ const Login = () =>{
                     </div> 
                 </form>
             </Container>
+        </section>
+             )}
         </section>
     )
 }

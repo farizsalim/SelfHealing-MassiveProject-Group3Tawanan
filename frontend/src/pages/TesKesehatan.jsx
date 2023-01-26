@@ -1,14 +1,15 @@
 import { Container} from "react-bootstrap";
 import "./TesKesehatan.css";
-import "../components/Formtes.css"
+import "../components/TestButton.css"
 import Bannertes from "../components/Bannertes";
 import Footer from "../components/Footer";
 import { bglineartes, bgtes } from "../image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, React} from "react";
 import Swal from "sweetalert2";
 import { TROOM } from "../routes";
 import { NavLink } from "react-router-dom";
 import Loading from "../components/Loading";
+import TestButton from "../components/TestButton";
 
 const TesKesehatan = () => {
 
@@ -23,30 +24,45 @@ const TesKesehatan = () => {
   const [badResult,setBadResult] = useState(false);
   const [normalResult,setNormalResult] = useState(false);
   const [goodResult,setGoodResult] = useState(false);
-  const [score1,getScore1] = useState();
-  const [score2,getScore2] = useState();
-  const [score3,getScore3] = useState();
-  const [score4,getScore4] = useState();
-  const [score5,getScore5] = useState();
+
+  const [listScore, setScore] = useState({
+
+  })
+  // console.log(listScore);
+
+
+  const scoreTotal = obj => Object.values(obj).reduce((a, b) => parseInt(a) + parseInt(b), 0);
+  console.log(scoreTotal(listScore));
+
   const questname1 = "Dalam 4 minggu terakhir, Anda tiba-tiba merasa lelah?";
   const questname2 = "Dalam 4 minggu terakhir, Anda merasa cemas?";
   const questname3 = "Dalam 4 minggu terakhir, Anda merasa cemas sampai tidak bisa menenangkan diri sendiri meskipun ada bantuan?";
   const questname4 = "Dalam 4 minggu terakhir, Anda merasa putus asa?";
   const questname5 = "Dalam 4 minggu terakhir, Anda merasa gelisah atau tidak tenang?";
-  const scoreTotal = parseInt(score1) + parseInt(score2) + parseInt(score3) + parseInt(score4) + parseInt(score5);
   
+  const onHandleScore = (key, value) => {
+    // console.log(value)
+    setScore((prevState) => {
+      return {
+        ...prevState,
+        [key] : value,
+
+      }
+    })
+  }
+
   const hasiltes = (e) =>{
     window.scrollTo(0, 0)
-    if(scoreTotal >= 25){
+    if(scoreTotal(listScore) >= 25){
       setBadResult(true)
       e.preventDefault()
-      console.log(scoreTotal);
+      console.log(scoreTotal(listScore));
     }
-    if(scoreTotal >=15){
+    if(scoreTotal(listScore) >=15){
       setNormalResult(true)
       e.preventDefault()
     }
-    if(scoreTotal >=5){
+    if(scoreTotal(listScore) >=5){
       setGoodResult(true)
       e.preventDefault()
     }
@@ -165,7 +181,6 @@ const TesKesehatan = () => {
             <img src={bgtes} alt="bgtes" className="bgtes"/>
             <img src={bglineartes} alt="bglineartes" className="bglineartes" />
       <Container>
-        <img src={bgtes} alt="bgtes" className="bgtes"/>
         <div className="d-flex justify-content-center">
           <h1 className="title-tkes text-center">Tes Kepribadian di SelfHealing.ID</h1>
         </div>
@@ -175,26 +190,13 @@ const TesKesehatan = () => {
           <h3 className="pertanyaan">{questname1}</h3>
           <section className="d-flex justify-content-between align-items-center">
             <h4 className="ket-jawaban">Saya Setuju</h4>
-            <input type="radio" name={questname1} value={1} id={questname1+"-1"} className="rd-form1" onChange={e=>getScore1(e.target.value)}/>
-            <label className="lbl-rd1" htmlFor={questname1+"-1"}></label>
-
-            <input type="radio" name={questname1} value={2} id={questname1+"-2"} className="rd-form2" onChange={e=>getScore1(e.target.value)}/>
-            <label className="lbl-rd2" htmlFor={questname1+"-2"}></label>
-
-            <input type="radio" name={questname1} value={3} id={questname1+"-3"} className="rd-form3" onChange={e=>getScore1(e.target.value)}/>
-            <label className="lbl-rd3" htmlFor={questname1+"-3"}></label>
-
-            <input type="radio" name={questname1} value={4} id={questname1+"-4"} className="rd-form4" onChange={e=>getScore1(e.target.value)}/>
-            <label className="lbl-rd4" htmlFor={questname1+"-4"}></label>
-
-            <input type="radio" name={questname1} value={5} id={questname1+"-5"} className="rd-form3" onChange={e=>getScore1(e.target.value)}/>
-            <label className="lbl-rd3" htmlFor={questname1+"-5"}></label>
-
-            <input type="radio" name={questname1} value={6} id={questname1+"-6"} className="rd-form2" onChange={e=>getScore1(e.target.value)}/>
-            <label className="lbl-rd2" htmlFor={questname1+"-6"}></label>
-
-            <input type="radio" name={questname1} value={7} id={questname1+"-7"} className="rd-form1" onChange={e=>getScore1(e.target.value)}/>
-            <label className="lbl-rd1" htmlFor={questname1+"-7"}></label>
+            <TestButton  name={'questname1'} id={'questname11'} value={1} labelClass="lbl-rd1" inputClass={"rd-form1"} onChange={e => onHandleScore('questname1', e.target.value)} />
+            <TestButton  name={'questname1'} id={'questname12'} value={2} labelClass="lbl-rd2" inputClass={"rd-form2"} onChange={e => onHandleScore('questname1', e.target.value)} />
+            <TestButton  name={'questname1'} id={'questname13'} value={3} labelClass="lbl-rd3" inputClass={"rd-form3"} onChange={e => onHandleScore('questname1', e.target.value)} />
+            <TestButton  name={'questname1'} id={'questname14'} value={4} labelClass="lbl-rd4" inputClass={"rd-form4"} onChange={e => onHandleScore('questname1', e.target.value)} />
+            <TestButton  name={'questname1'} id={'questname15'} value={5} labelClass="lbl-rd3" inputClass={"rd-form3"} onChange={e => onHandleScore('questname1', e.target.value)} />
+            <TestButton  name={'questname1'} id={'questname16'} value={6} labelClass="lbl-rd2" inputClass={"rd-form2"} onChange={e => onHandleScore('questname1', e.target.value)} />
+            <TestButton  name={'questname1'} id={'questname17'} value={7} labelClass="lbl-rd1" inputClass={"rd-form1"} onChange={e => onHandleScore('questname1', e.target.value)} />
             <h4 className="ket-jawaban">Saya Tidak Setuju</h4>
           </section>
           <div className="line-form"></div>
@@ -203,26 +205,13 @@ const TesKesehatan = () => {
           <h3 className="pertanyaan">{questname2}</h3>
           <section className="d-flex justify-content-between align-items-center">
             <h4 className="ket-jawaban">Saya Setuju</h4>
-            <input type="radio" name={questname2} value={1} id={questname2+"-1"} className="rd-form1" onChange={e=>getScore2(e.target.value)}/>
-            <label className="lbl-rd1" htmlFor={questname2+"-1"}></label>
-
-            <input type="radio" name={questname2} value={2} id={questname2+"-2"} className="rd-form2" onChange={e=>getScore2(e.target.value)}/>
-            <label className="lbl-rd2" htmlFor={questname2+"-2"}></label>
-
-            <input type="radio" name={questname2} value={3} id={questname2+"-3"} className="rd-form3" onChange={e=>getScore2(e.target.value)}/>
-            <label className="lbl-rd3" htmlFor={questname2+"-3"}></label>
-
-            <input type="radio" name={questname2} value={4} id={questname2+"-4"} className="rd-form4" onChange={e=>getScore2(e.target.value)}/>
-            <label className="lbl-rd4" htmlFor={questname2+"-4"}></label>
-
-            <input type="radio" name={questname2} value={5} id={questname2+"-5"} className="rd-form3" onChange={e=>getScore2(e.target.value)}/>
-            <label className="lbl-rd3" htmlFor={questname2+"-5"}></label>
-
-            <input type="radio" name={questname2} value={6} id={questname2+"-6"} className="rd-form2" onChange={e=>getScore2(e.target.value)}/>
-            <label className="lbl-rd2" htmlFor={questname2+"-6"}></label>
-
-            <input type="radio" name={questname2} value={7} id={questname2+"-7"} className="rd-form1" onChange={e=>getScore2(e.target.value)}/>
-            <label className="lbl-rd1" htmlFor={questname2+"-7"}></label>
+            <TestButton  name={'questname2'} id={'questname21'} value={1} labelClass="lbl-rd1" inputClass={"rd-form1"} onChange={e => onHandleScore('questname2', e.target.value)} />
+            <TestButton  name={'questname2'} id={'questname22'} value={2} labelClass="lbl-rd2" inputClass={"rd-form2"} onChange={e => onHandleScore('questname2', e.target.value)} />
+            <TestButton  name={'questname2'} id={'questname23'} value={3} labelClass="lbl-rd3" inputClass={"rd-form3"} onChange={e => onHandleScore('questname2', e.target.value)} />
+            <TestButton  name={'questname2'} id={'questname24'} value={4} labelClass="lbl-rd4" inputClass={"rd-form4"} onChange={e => onHandleScore('questname2', e.target.value)} />
+            <TestButton  name={'questname2'} id={'questname25'} value={5} labelClass="lbl-rd3" inputClass={"rd-form3"} onChange={e => onHandleScore('questname2', e.target.value)} />
+            <TestButton  name={'questname2'} id={'questname26'} value={6} labelClass="lbl-rd2" inputClass={"rd-form2"} onChange={e => onHandleScore('questname2', e.target.value)} />
+            <TestButton  name={'questname2'} id={'questname27'} value={7} labelClass="lbl-rd1" inputClass={"rd-form1"} onChange={e => onHandleScore('questname2', e.target.value)} />
             <h4 className="ket-jawaban">Saya Tidak Setuju</h4>
           </section>
           <div className="line-form"></div>
@@ -231,26 +220,13 @@ const TesKesehatan = () => {
           <h3 className="pertanyaan">{questname3}</h3>
           <section className="d-flex justify-content-between align-items-center">
             <h4 className="ket-jawaban">Saya Setuju</h4>
-            <input type="radio" name={questname3} value={1} id={questname3+"-1"} className="rd-form1" onChange={e=>getScore3(e.target.value)}/>
-            <label className="lbl-rd1" htmlFor={questname3+"-1"}></label>
-
-            <input type="radio" name={questname3} value={2} id={questname3+"-2"} className="rd-form2" onChange={e=>getScore3(e.target.value)}/>
-            <label className="lbl-rd2" htmlFor={questname3+"-2"}></label>
-
-            <input type="radio" name={questname3} value={3} id={questname3+"-3"} className="rd-form3" onChange={e=>getScore3(e.target.value)}/>
-            <label className="lbl-rd3" htmlFor={questname3+"-3"}></label>
-
-            <input type="radio" name={questname3} value={4} id={questname3+"-4"} className="rd-form4" onChange={e=>getScore3(e.target.value)}/>
-            <label className="lbl-rd4" htmlFor={questname3+"-4"}></label>
-
-            <input type="radio" name={questname3} value={5} id={questname3+"-5"} className="rd-form3" onChange={e=>getScore3(e.target.value)}/>
-            <label className="lbl-rd3" htmlFor={questname3+"-5"}></label>
-
-            <input type="radio" name={questname3} value={6} id={questname3+"-6"} className="rd-form2" onChange={e=>getScore3(e.target.value)}/>
-            <label className="lbl-rd2" htmlFor={questname3+"-6"}></label>
-
-            <input type="radio" name={questname3} value={7} id={questname3+"-7"} className="rd-form1" onChange={e=>getScore3(e.target.value)}/>
-            <label className="lbl-rd1" htmlFor={questname3+"-7"}></label>
+            <TestButton  name={'questname3'} id={'questname31'} value={1} labelClass="lbl-rd1" inputClass={"rd-form1"} onChange={e => onHandleScore('questname3', e.target.value)} />
+            <TestButton  name={'questname3'} id={'questname32'} value={2} labelClass="lbl-rd2" inputClass={"rd-form2"} onChange={e => onHandleScore('questname3', e.target.value)} />
+            <TestButton  name={'questname3'} id={'questname33'} value={3} labelClass="lbl-rd3" inputClass={"rd-form3"} onChange={e => onHandleScore('questname3', e.target.value)} />
+            <TestButton  name={'questname3'} id={'questname34'} value={4} labelClass="lbl-rd4" inputClass={"rd-form4"} onChange={e => onHandleScore('questname3', e.target.value)} />
+            <TestButton  name={'questname3'} id={'questname35'} value={5} labelClass="lbl-rd3" inputClass={"rd-form3"} onChange={e => onHandleScore('questname3', e.target.value)} />
+            <TestButton  name={'questname3'} id={'questname36'} value={6} labelClass="lbl-rd2" inputClass={"rd-form2"} onChange={e => onHandleScore('questname3', e.target.value)} />
+            <TestButton  name={'questname3'} id={'questname37'} value={7} labelClass="lbl-rd1" inputClass={"rd-form1"} onChange={e => onHandleScore('questname3', e.target.value)} />
             <h4 className="ket-jawaban">Saya Tidak Setuju</h4>
           </section>
           <div className="line-form"></div>
@@ -259,26 +235,13 @@ const TesKesehatan = () => {
           <h3 className="pertanyaan">{questname4}</h3>
           <section className="d-flex justify-content-between align-items-center">
             <h4 className="ket-jawaban">Saya Setuju</h4>
-            <input type="radio" name={questname4} value={1} id={questname4+"-1"} className="rd-form1" onChange={e=>getScore4(e.target.value)}/>
-            <label className="lbl-rd1" htmlFor={questname4+"-1"}></label>
-
-            <input type="radio" name={questname4} value={2} id={questname4+"-2"} className="rd-form2" onChange={e=>getScore4(e.target.value)}/>
-            <label className="lbl-rd2" htmlFor={questname4+"-2"}></label>
-
-            <input type="radio" name={questname4} value={3} id={questname4+"-3"} className="rd-form3" onChange={e=>getScore4(e.target.value)}/>
-            <label className="lbl-rd3" htmlFor={questname4+"-3"}></label>
-
-            <input type="radio" name={questname4} value={4} id={questname4+"-4"} className="rd-form4" onChange={e=>getScore4(e.target.value)}/>
-            <label className="lbl-rd4" htmlFor={questname4+"-4"}></label>
-
-            <input type="radio" name={questname4} value={5} id={questname4+"-5"} className="rd-form3" onChange={e=>getScore4(e.target.value)}/>
-            <label className="lbl-rd3" htmlFor={questname4+"-5"}></label>
-
-            <input type="radio" name={questname4} value={6} id={questname4+"-6"} className="rd-form2" onChange={e=>getScore4(e.target.value)}/>
-            <label className="lbl-rd2" htmlFor={questname4+"-6"}></label>
-
-            <input type="radio" name={questname4} value={7} id={questname4+"-7"} className="rd-form1" onChange={e=>getScore4(e.target.value)}/>
-            <label className="lbl-rd1" htmlFor={questname4+"-7"}></label>
+            <TestButton  name={'questname4'} id={'questname41'} value={1} labelClass="lbl-rd1" inputClass={"rd-form1"} onChange={e => onHandleScore('questname4', e.target.value)} />
+            <TestButton  name={'questname4'} id={'questname42'} value={2} labelClass="lbl-rd2" inputClass={"rd-form2"} onChange={e => onHandleScore('questname4', e.target.value)} />
+            <TestButton  name={'questname4'} id={'questname43'} value={3} labelClass="lbl-rd3" inputClass={"rd-form3"} onChange={e => onHandleScore('questname4', e.target.value)} />
+            <TestButton  name={'questname4'} id={'questname44'} value={4} labelClass="lbl-rd4" inputClass={"rd-form4"} onChange={e => onHandleScore('questname4', e.target.value)} />
+            <TestButton  name={'questname4'} id={'questname45'} value={5} labelClass="lbl-rd3" inputClass={"rd-form3"} onChange={e => onHandleScore('questname4', e.target.value)} />
+            <TestButton  name={'questname4'} id={'questname46'} value={6} labelClass="lbl-rd2" inputClass={"rd-form2"} onChange={e => onHandleScore('questname4', e.target.value)} />
+            <TestButton  name={'questname4'} id={'questname47'} value={7} labelClass="lbl-rd1" inputClass={"rd-form1"} onChange={e => onHandleScore('questname4', e.target.value)} />
             <h4 className="ket-jawaban">Saya Tidak Setuju</h4>
           </section>
           <div className="line-form"></div>
@@ -287,26 +250,13 @@ const TesKesehatan = () => {
           <h3 className="pertanyaan">{questname5}</h3>
           <section className="d-flex justify-content-between align-items-center">
             <h4 className="ket-jawaban">Saya Setuju</h4>
-            <input type="radio" name={questname5} value={1} id={questname5+"-1"} className="rd-form1" onChange={e=>getScore5(e.target.value)}/>
-            <label className="lbl-rd1" htmlFor={questname5+"-1"}></label>
-
-            <input type="radio" name={questname5} value={2} id={questname5+"-2"} className="rd-form2" onChange={e=>getScore5(e.target.value)}/>
-            <label className="lbl-rd2" htmlFor={questname5+"-2"}></label>
-
-            <input type="radio" name={questname5} value={3} id={questname5+"-3"} className="rd-form3" onChange={e=>getScore5(e.target.value)}/>
-            <label className="lbl-rd3" htmlFor={questname5+"-3"}></label>
-
-            <input type="radio" name={questname5} value={4} id={questname5+"-4"} className="rd-form4" onChange={e=>getScore5(e.target.value)}/>
-            <label className="lbl-rd4" htmlFor={questname5+"-4"}></label>
-
-            <input type="radio" name={questname5} value={5} id={questname5+"-5"} className="rd-form3" onChange={e=>getScore5(e.target.value)}/>
-            <label className="lbl-rd3" htmlFor={questname5+"-5"}></label>
-
-            <input type="radio" name={questname5} value={6} id={questname5+"-6"} className="rd-form2" onChange={e=>getScore5(e.target.value)}/>
-            <label className="lbl-rd2" htmlFor={questname5+"-6"}></label>
-
-            <input type="radio" name={questname5} value={7} id={questname5+"-7"} className="rd-form1" onChange={e=>getScore5(e.target.value)}/>
-            <label className="lbl-rd1" htmlFor={questname5+"-7"}></label>
+            <TestButton  name={'questname5'} id={'questname51'} value={1} labelClass="lbl-rd1" inputClass={"rd-form1"} onChange={e => onHandleScore('questname5', e.target.value)} />
+            <TestButton  name={'questname5'} id={'questname52'} value={2} labelClass="lbl-rd2" inputClass={"rd-form2"} onChange={e => onHandleScore('questname5', e.target.value)} />
+            <TestButton  name={'questname5'} id={'questname53'} value={3} labelClass="lbl-rd3" inputClass={"rd-form3"} onChange={e => onHandleScore('questname5', e.target.value)} />
+            <TestButton  name={'questname5'} id={'questname54'} value={4} labelClass="lbl-rd4" inputClass={"rd-form4"} onChange={e => onHandleScore('questname5', e.target.value)} />
+            <TestButton  name={'questname5'} id={'questname55'} value={5} labelClass="lbl-rd3" inputClass={"rd-form3"} onChange={e => onHandleScore('questname5', e.target.value)} />
+            <TestButton  name={'questname5'} id={'questname56'} value={6} labelClass="lbl-rd2" inputClass={"rd-form2"} onChange={e => onHandleScore('questname5', e.target.value)} />
+            <TestButton  name={'questname5'} id={'questname57'} value={7} labelClass="lbl-rd1" inputClass={"rd-form1"} onChange={e => onHandleScore('questname5', e.target.value)} />
             <h4 className="ket-jawaban">Saya Tidak Setuju</h4>
           </section>
           <section className="d-flex justify-content-center">

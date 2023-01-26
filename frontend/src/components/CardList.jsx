@@ -3,6 +3,7 @@ import "./CardList.css"
 import MedCard from "./MeditationCard";
 import Footer from "./Footer";
 import { Medroom } from "../api/Data";
+import { PTROM } from "../routes";
 
 const Cardlist = () => {
     return(
@@ -12,8 +13,8 @@ const Cardlist = () => {
                         <h1 className="titletherapy">Ruang Meditasimu</h1>
                             <Row xs={1} md={3} className="py-5">
                                 {Medroom.map((val) =>(
-                                    <Col className="p-3 d-flex justify-content-center">
-                                        <MedCard title={val.title} img={val.img} text={val.text}/>
+                                    <Col className="p-3 d-flex justify-content-center item-therapy" key={val.id}>
+                                        <MedCard  key={val.id} title={val.title} img={val.img} text={val.text} to={`${PTROM}/${val.id}`}/>
                                     </Col>
                                 ))}
                             </Row>

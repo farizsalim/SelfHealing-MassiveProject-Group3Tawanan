@@ -1,6 +1,6 @@
 import {Routes,Route} from "react-router-dom"
 import Home from "./pages/Home";
-import {HOME, JENK, LOGIN, SIGNUP, TROOM, TKES, PROFILE, BLOG, ARTIKEL, DETK} from "./routes";
+import {HOME, JENK, LOGIN, SIGNUP, TROOM, TKES, PROFILE, BLOG, ARTIKEL, DETK, PTROM} from "./routes";
 import Navs from "./components/Navs"
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -12,6 +12,7 @@ import Profile from "./pages/Profile";
 import Blog from "./pages/Blog";
 import Artikel from "./pages/Artikel";
 import DetailKarir from "./pages/DetailKarir";
+import TherapyPage from "./pages/TherapyPage";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
         <Route element={<Blog/>} path={BLOG}/>
         <Route element={<Artikel/>} path={ARTIKEL}/>
         <Route element={<DetailKarir/>} path={DETK}/>
+        <Route element={<TherapyPage/>} path={`${PTROM}/:therapyid`}/>
       </Routes>
     </section>
   );
